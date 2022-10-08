@@ -18,9 +18,9 @@ def validate(word, placedLetters, unplacedLetters, invalidLetters) :
 f = open("Words.txt", 'r')
 words = f.readlines()
 #print(words)
-placedLetters = input("Placed letters : ")
-unplacedLetters = input("Unplaced letters : ")
-invalidLetters = input("Invalid letters : ")
+placedLetters = input("Placed letters : ").lower()
+unplacedLetters = input("Unplaced letters : ").lower()
+invalidLetters = input("Invalid letters : ").lower()
 for i in range(len(words)) :
     b = False
     if validate(words[i], placedLetters, unplacedLetters, invalidLetters) :
